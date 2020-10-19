@@ -55,7 +55,7 @@ class Yolov3:
         for i in range(len(boxes)):
             if i in indexes:
                 labels.append(str(self.classes[class_ids[i]]))
-        return labels, confidences, boxes # return objects name list, matching rate list, coordinate list in images
+        return labels, confidences, boxes # return objects name list, rate list,box coordinate
 
 if __name__=="__main__":
     print('Yolo Test Module')
